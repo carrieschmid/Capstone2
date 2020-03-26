@@ -19,7 +19,7 @@ const HomePage = () => {
             alt="logo"
             style={{ marginBottom: 12 }}
           />
-          Reactivities
+          Open House
         </Header>
         {isLoggedIn && user ? (
           <Fragment>
