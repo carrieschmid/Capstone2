@@ -21,8 +21,12 @@ const ActivityListItem: React.FC<{ activity: IActivity }> = ({ activity }) => {
               <Item.Header as={Link} to={`/activities/${activity.id}`}>
                 {activity.title}
               </Item.Header>
+
               {/* <Item.Meta>{format(activity., "eeee do MMMM")}</Item.Meta> */}
-              <Item.Description> Hosted by {host.displayName}</Item.Description>
+              {/* <Item.Description> Hosted by {host.displayName}</Item.Description> */}
+              <Item.Description>
+                <span>{activity.description}</span>
+              </Item.Description>
               {activity.isHost && (
                 <Item.Description>
                   <Label
@@ -53,7 +57,6 @@ const ActivityListItem: React.FC<{ activity: IActivity }> = ({ activity }) => {
         <ActivityListItemAttendees attendees={activity.attendees} />>
       </Segment>
       <Segment clearing>
-        <span>{activity.description}</span>
         <Button
           as={Link}
           to={`/activities/${activity.id}`}

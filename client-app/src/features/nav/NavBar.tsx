@@ -29,7 +29,7 @@ const NavBar: React.FC = () => {
             as={NavLink}
             to="/createActivity"
             positive
-            content="create Activity"
+            content="Create Activity"
           />
         </Menu.Item>
         {user && (
