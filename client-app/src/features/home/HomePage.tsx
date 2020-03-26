@@ -15,7 +15,7 @@ const HomePage = () => {
         <Header as="h1" inverted>
           <Image
             size="massive"
-            src="/assets/logo.png"
+            src="/assets/logo.jpg"
             alt="logo"
             style={{ marginBottom: 12 }}
           />
@@ -34,7 +34,7 @@ const HomePage = () => {
           </Fragment>
         ) : (
           <Fragment>
-            <Header as="h2" inverted content="Welcome to Reactivities" />
+            <Header as="h2" inverted content="Welcome!" />
             <Button
               onClick={() => openModal(<LoginForm />)}
               size="huge"

@@ -17,11 +17,11 @@ const NavBar: React.FC = () => {
       <Container>
         <Menu.Item header as={NavLink} exact to="/">
           <img
-            src="/assets/logo.png"
+            src="/assets/logo.jpg"
             alt="logo"
             style={{ marginRight: "10px" }}
           />
-          Reactivities
+          Open House
         </Menu.Item>
         <Menu.Item name="Activities" as={Link} to="/activities" />
         <Menu.Item>
